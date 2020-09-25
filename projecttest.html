@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.first{
+            overflow: auto ;
+            background-color: orange;
+            display: block;
+            text-align: center;
+        }
+        .why{
+            color: brown;
+        }
+        .why2{
+            color: white;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+            float: right;
+        }
+        .dropbtn{
+            background-color: orangered;
+            color: white;
+            padding: 16px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer; 
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            
+        }
+        .dropdown-content a{
+            color:black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover{
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropbtn{
+         background-color: orangered;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .iptcenter{
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    
+
+<div class="first">
+    
+    <h1 class="why2"><span class="why">m</span>ukja-muk<span class="why">j</span>a</h1>
+    
+</div>
+<div class="dropdown">
+    <button class="dropbtn">menu</button>
+    <div class="dropdown-content">
+        <a href="#">한식</a>
+        <a href="#">중식</a>
+        <a href="#">일식</a>
+        <a href="#">양식</a>
+        <a href="#">기타</a>
+    </div>
+</div>
+<form>
+    <input class="iptcenter" type="text" value="내용을 입력하세요">
+    <input style="margin: 0 auto; display: inline;"  type="submit" value="Go">
+</form>
+
+</body>
+</html>
