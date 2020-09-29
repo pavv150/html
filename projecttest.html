@@ -11,11 +11,25 @@
             display: block;
             text-align: center;
         }
+        .second{
+            background-color: yellow;
+            text-align: center;
+            
+        }
         .why{
             color: brown;
         }
         .why2{
             color: white;
+        }
+        .why3{
+            color: orange;
+        }
+        .why4{
+            background-color: wheat;
+            color: tomato;
+            height: 50px;
+            width: 80px;
         }
         .dropdown{
             position: relative;
@@ -25,10 +39,11 @@
         .dropbtn{
             background-color: orangered;
             color: white;
-            padding: 16px;
+            padding: 31.5px;
             font-size: 20px;
             border: none;
-            cursor: pointer; 
+            cursor: pointer;
+            z-index: 10;
         }
         .dropdown-content{
             display: none;
@@ -36,7 +51,6 @@
             background-color: white;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
             
         }
         .dropdown-content a{
@@ -54,34 +68,42 @@
         .dropdown:hover .dropdown-content{
             display: block;
         }
-        .iptcenter{
-            display: block;
-            margin: 0 auto;
-        }
+        #a{position: relative; right: 16px;}
+        #b{position: relative; left: 57px;}
+        #c{position: relative; left: 130px;}
     </style>
 </head>
 <body>
-    
-
+    <header>
+    <span class="dropdown">
+        <button class="dropbtn">menu</button>
+        <span class="dropdown-content">
+            <br>
+            <a href="#">한식</a>
+            <a href="#">중식</a>
+            <a href="#">일식</a>
+            <a href="#">양식</a>
+            <a href="#">기타</a>
+        </span>
+    </span>
 <div class="first">
-    
     <h1 class="why2"><span class="why">m</span>ukja-muk<span class="why">j</span>a</h1>
-    
 </div>
-<div class="dropdown">
-    <button class="dropbtn">menu</button>
-    <div class="dropdown-content">
-        <a href="#">한식</a>
-        <a href="#">중식</a>
-        <a href="#">일식</a>
-        <a href="#">양식</a>
-        <a href="#">기타</a>
+</header>
+
+<nav>
+    <div class="second">
+    <input id="a" class="why4" type="submit" value="지도">
+    <input id="b" class="why4" type="submit" value="나란히">
+    <input id="c" class="why4" type="submit" value="정렬기준">
     </div>
-</div>
-<form>
-    <input class="iptcenter" type="text" value="내용을 입력하세요">
-    <input style="margin: 0 auto; display: inline;"  type="submit" value="Go">
-</form>
+</nav> 
+
+<footer>
+    <span style="margin-bottom: 500 auto;">이용약관</span>
+    <span>개인정보처리방침</span>
+    <span>About Us</span>
+</footer>
 
 </body>
 </html>
